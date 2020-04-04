@@ -14,7 +14,7 @@ jeff.on('ready', () => {
     console.log('Pronto');
 });
 
-jeff.on('message', message => {
+jeff.on('message', async message => {
     responseObejct = links;
     if(responseObejct[message.content]){
         message.channel.send(responseObejct[message.content]);
